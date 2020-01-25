@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble sort</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("/images/bubbles.gif");
+
+        }
+        *{
+            font-family: Inconsolata, Arial;
+        }
+        .mb{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            width: 600px;
+            height: 300px;
+            padding: 20px;
+            border: none;
+            margin: 0;
+            background-color: rgba(255, 204, 242,0.8);
+        }
+
+        input{
+            position: absolute;
+            top: 50%;
+            left: 36%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+            height: 45px;
+            background-color: rgba(230, 153, 255,0.8);
+            border: none;
+            color: white;
+            font-size: 20px;
+
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            left: 78%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(217, 102, 255, 1);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        button:hover{
+            box-shadow: 1px 5px 10px -5px black;
+            transition: all 0.3s ease;
+        }
+        #demo1{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border: none;
+            color: white;
+            font-size: 20px;
+
+        }
+    </style>
+    <script src="/JS/Functions.js" defer></script>
+</head>
+<body >
+<div class="mb">
+    <h1 style="font-size: 25px; color:rgba(220, 102, 255, 1) ">Пузырьковая сортировка</h1>
+    <p style="font-size: 20px; color:rgba(217, 102, 255, 1)">Введите через пробел последовательность чисел для сортировки</p>
+    <div>
+        <input type="text" id="test" class="input-in" >
+        <button>Сортировать</button>
+    </div>
+    <p id="demo1"></p>
+</div>
+</body>
+</html>
