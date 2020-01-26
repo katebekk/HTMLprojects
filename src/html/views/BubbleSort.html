@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bubble sort</title>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    <style>
+<% var data = {
+title: "",
+author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<style>
         body{
-            background-image: url("/images/bubbles.gif");
+            background-image: url("./img/bubbles.gif");
 
         }
         *{
@@ -69,9 +68,7 @@
 
         }
     </style>
-    <script src="/JS/Functions.js" defer></script>
-</head>
-<body >
+    <script src="./js/Functions.js" defer></script>
 <div class="mb">
     <h1 style="font-size: 25px; color:rgba(220, 102, 255, 1) ">Пузырьковая сортировка</h1>
     <p style="font-size: 20px; color:rgba(217, 102, 255, 1)">Введите через пробел последовательность чисел для сортировки</p>
@@ -81,5 +78,4 @@
     </div>
     <p id="demo1"></p>
 </div>
-</body>
-</html>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
