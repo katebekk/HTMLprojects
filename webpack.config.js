@@ -23,7 +23,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins('./src/html/views')
 module.exports = {
 
-    entry:["./src/js/index.js","./src/js/Functions.js","./src/js/photo-scroll.js","./src/css/style.css"],
+    entry:["./src/js/index.js","./src/js/Functions.js","./src/css/style.css"],
     output: {
         filename: 'js/bundle.js',
         path: path.resolve(__dirname, 'dist'),

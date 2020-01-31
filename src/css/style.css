@@ -47,6 +47,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px;
     width: 50%;
     padding: 5%;
 
@@ -56,6 +57,11 @@ img{
     left: 10%;
     top: 30%;
     height: 50% ;
+    background: none;
+    border: none;
+    font-size: 200% ;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
 
 
 }
@@ -64,8 +70,15 @@ img{
     right: 10%;
     top: 30%;
     height: 50% ;
+    background: none;
+    border: none;
+    font-size: 200% ;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
 }
-
+.drawingPhotos button:hover{
+    color: #ff005b;
+}
 
 ul {
     list-style: none;
