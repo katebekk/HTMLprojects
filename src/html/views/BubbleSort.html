@@ -1,5 +1,5 @@
 <% var data = {
-title: "",
+title: "Bubble Sort",
 author: ""
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
@@ -38,7 +38,7 @@ author: ""
             font-size: 20px;
 
         }
-        button{
+        #sort{
             position: absolute;
             top: 50%;
             left: 78%;
@@ -52,7 +52,7 @@ author: ""
             display: inline-block;
             font-size: 16px;
         }
-        button:hover{
+        #sort:hover{
             box-shadow: 1px 5px 10px -5px black;
             transition: all 0.3s ease;
         }
@@ -68,13 +68,13 @@ author: ""
 
         }
     </style>
-    <script src="./js/Functions.js" defer></script>
+    <!--<script src="./js/Functions.js" defer></script>-->
 <div class="mb">
     <h1 style="font-size: 25px; color:rgba(220, 102, 255, 1) ">Пузырьковая сортировка</h1>
     <p style="font-size: 20px; color:rgba(217, 102, 255, 1)">Введите через пробел последовательность чисел для сортировки</p>
     <div>
         <input type="text" id="test" class="input-in" >
-        <button>Сортировать</button>
+        <button id="sort">Сортировать</button>
     </div>
     <p id="demo1"></p>
 </div>

@@ -23,7 +23,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins('./src/html/views')
 module.exports = {
 
-    entry:["./src/js/index.js","./src/css/style.css"],
+    entry:["./src/js/index.js","./src/js/Functions.js","./src/js/photo-scroll.js","./src/css/style.css"],
     output: {
         filename: 'js/bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -52,7 +52,7 @@ module.exports = {
                 test: /\.html$/,
                 include: path.resolve(__dirname, 'src/html/includes'),
                 use: ['raw-loader']
-            },
+            }
     ],
    },
     devtool: "source-map",
@@ -77,12 +77,7 @@ module.exports = {
             {
                 from: "./src/img",
                 to: "./img"
-            },
-            {
-                from: "./src/js/Functions.js",
-                to: "./js"
-            },
-
+            }
         ])
     ].concat(htmlPlugins)
 

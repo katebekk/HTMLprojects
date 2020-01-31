@@ -1,39 +1,72 @@
 @import url(https://fonts.googleapis.com/css?family=Courier+Prime&display=swap);
 body {margin:0;
     padding: 0;
-    /*background-image: url("./../img/kletochki.gif");*/
 }
 *{
     font-family: 'Courier Prime', monospace;
+
 }
 .container{
-    width: 700px;
-    height: 700px;
-    position: fixed;
+    width: 80%;
+    height: 200%;
+    position: absolute;
     top: 20%;
     left: 10%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    overflow: auto;
     border-radius: 25px;
     margin: 0;
     background-color: rgba(255, 204, 242,0.5);
-}
-.container h1{
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    transform: translate(-50%,-50%);
-    border: none;
-    background-color: rgba(255, 255, 255, 0.01);
-    margin: auto;
-    padding: 0 20px;
-    font-size: 2em ;
     color: #fff;
     text-shadow: 0 0 20px #ff005b;
 }
+#description{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+
+}
+.container h1{
+    font-size: 200% ;
+}
+.container p{
+    font-size: 140% ;
+}
+.drawingPhotos{
+    position: absolute;
+    display: block;
+    left: 15%;
+    top: 14%;
+    /*margin-top: 220px;*/
+    width: 60%;
+    border-radius: 25px;
+    background-color: rgba(255, 204, 242,0.5);
+}
+#photo{
+
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5%;
+
+}
+#buttonLeft{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    height: 50% ;
+
+
+}
+#buttonRight{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    height: 50% ;
+}
+
+
 ul {
     list-style: none;
     margin: 0 auto;
@@ -43,12 +76,15 @@ a {
     transition: .5s linear;
 }
 nav {
+    width: 20%;
+    height: 5%;
     position: absolute;
     top: 10%;
     left: 10%;
     display: block;
     width: 660px;
     margin: 0 auto 30px;
+
 }
 nav ul {
     padding: 0;
@@ -57,7 +93,7 @@ nav ul {
 nav a {
 
     padding: 0 20px;
-    font-size: 2em ;
+    font-size: 200% ;
     color: #fff;
     text-shadow: 0 0 20px #ff005b;
 }
@@ -111,6 +147,8 @@ nav li {
     0 0 20px #ff005b;
 
 }
+
+
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

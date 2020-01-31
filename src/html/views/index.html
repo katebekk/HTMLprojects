@@ -1,16 +1,27 @@
 <% var data = {
-title: "",
+title: "About me",
 author: ""
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
+
 <style>
     body {
         background-image: url("./img/kletochki.gif");
     }
 </style>
+
 <div class="container">
-    <h1>Hi, i'm Kate</h1>
-    <p>This is my first website</p>
+    <div id = "description">
+        <h1>Hi, i'm Kate 	</h1>
+        <p>This is my first website. Let me tell you little about me.</p>
+        <p>I love to draw, here you can see a couple of my works</p>
+    </div>
+    <div class ="drawingPhotos">
+        <button id="buttonLeft">left</button>
+        <div id="photo"></div>
+        <button id="buttonRight">right</button>
+    </div>
+<div id="try"></div>
 </div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

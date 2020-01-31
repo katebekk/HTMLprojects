@@ -1,11 +1,17 @@
-/*
-function getComponent() {
-    return import(/!* webpackChunkName: "lodash" *!/ 'lodash').then(({ default: _ }) => {
-        const element = document.createElement('div');
-        element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-        return element;
-    }).catch(error => 'An error occurred while loading the component');
+let photo = document.getElementById('photo');
+let imag = document.createElement("img");
+
+var requestURL = 'http://167.172.230.202/JSONs/images.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+    let jsonO = request.response;
+    showImage(jsonO);
 }
-getComponent().then(component => {
-    document.body.appendChild(component);
-})*/
+function showImage(jsonObj) {
+    imag.src = jsonObj['photo_url'][3];
+    photo.appendChild(imag);
+}

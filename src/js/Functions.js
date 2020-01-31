@@ -1,7 +1,7 @@
 let intputIn = document.querySelector('.input-in');
-let button = document.querySelector("button");
+let butt = document.getElementById("sort");
 
-button.onclick = function () {
+butt.onclick = function () {
     /*считывание в массив*/
     let countStr = 0;//счётчик
     let countN = 0;
